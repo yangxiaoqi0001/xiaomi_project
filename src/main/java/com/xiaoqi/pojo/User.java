@@ -7,6 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
+ * 用户表
  * @author : yangfan
  * @Date : 2020/6/28
  **/
@@ -14,7 +15,9 @@ import java.util.Date;
 public class User implements Serializable {
     @TableId
     private Long id;
-
+    /**
+     * 创建时间
+     */
     private Date createTime;
 
     private String createUser;
