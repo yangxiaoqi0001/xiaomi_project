@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class Goods {
+
     private Long id;
 
     private Date createTime;

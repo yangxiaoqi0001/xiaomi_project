@@ -12,7 +12,7 @@ import java.util.Date;
 @TableName("biz_goods_protect")
 public class GoodsProtect implements Serializable {
     /**
-     * 主键id
+     * 主 键id
      */
     @TableId
     private Long id;

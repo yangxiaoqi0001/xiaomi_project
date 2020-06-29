@@ -16,7 +16,7 @@ public class GoodsSummary {
     @TableId
     private Long id;
     /**
-     * 创建时间
+     * 创 建时间
      */
     private Date createTime;
     /**

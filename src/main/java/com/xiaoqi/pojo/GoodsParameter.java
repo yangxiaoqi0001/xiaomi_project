@@ -7,7 +7,9 @@ import java.util.Date;
 public class GoodsParameter {
     @TableId
     private Long id;
-
+    /**
+     *
+      */
     private Date createTime;
 
     private String createUser;
