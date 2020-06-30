@@ -1,58 +1,113 @@
 package com.xiaoqi.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
+@TableName("biz_goods")
 public class Goods {
-
+    /**
+     * 主键ID
+     */
+    @TableId
     private Long id;
-
+    /**
+     * 创建时间
+     */
     private Date createTime;
-
+    /**
+     * 创建人
+     */
     private String createUser;
-
+    /**
+     * 修改时间
+     */
     private Date updateTime;
-
+    /**
+     * 修改人
+     */
     private String updateUser;
-
+    /**
+     * 是否删除
+     */
     private Integer isDelete;
-
+    /**
+     * 名称
+     */
     private String name;
-
+    /**
+     * 商品编号
+     */
     private String goodsCode;
-
+    /**
+     * 第一列表编号
+     */
     private String firstCode;
-
+    /**
+     * 第二列表编号
+     */
     private String secondCode;
-
+    /**
+     * 商品简介
+     */
     private String introduction;
-
+    /**
+     * 简介
+     */
     private BigDecimal price;
-
+    /**
+     * 商品型号1
+     */
     private String goodsEdition1;
-
+    /**
+     * 商品型号2
+     */
     private String goodsEdition2;
-
+    /**
+     * 商品型号3
+     */
     private String goodsEdition3;
-
+    /**
+     * 商品型号4
+     */
     private String goodsEdition4;
-
+    /**
+     * 商品颜色1
+     */
     private String goodsColor1;
-
+    /**
+     * 商品颜色2
+     */
     private String goodsColor2;
-
+    /**
+     * 商品颜色3
+     */
     private String goodsColor3;
-
+    /**
+     * 商品颜色4
+     */
     private String goodsColor4;
-
+    /**
+     * 商品图片1
+     */
     private String goodsPic1;
-
+    /**
+     *商品图片2
+     */
     private String goodsPic2;
-
+    /**
+     * 商品图片3
+     */
     private String goodsPic3;
-
+    /**
+     * 商品图片4
+     */
     private String goodsPic4;
-
+    /**
+     * 商品图片5
+     */
     private String goodsPic5;
 
     public Long getId() {
