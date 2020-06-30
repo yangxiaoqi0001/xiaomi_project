@@ -193,4 +193,25 @@ public class GoodsProtect implements Serializable {
     public void setReserve5(String reserve5) {
         this.reserve5 = reserve5 == null ? null : reserve5.trim();
     }
+
+    @Override
+    public String toString() {
+        return "GoodsProtect{" +
+                "id=" + id +
+                ", createTime=" + createTime +
+                ", createUser='" + createUser + '\'' +
+                ", updateTime=" + updateTime +
+                ", updateUser='" + updateUser + '\'' +
+                ", isDelete=" + isDelete +
+                ", goodsCode='" + goodsCode + '\'' +
+                ", accident='" + accident + '\'' +
+                ", screenBreakage='" + screenBreakage + '\'' +
+                ", extendedWarranty='" + extendedWarranty + '\'' +
+                ", reserve1='" + reserve1 + '\'' +
+                ", reserve2='" + reserve2 + '\'' +
+                ", reserve3='" + reserve3 + '\'' +
+                ", reserve4='" + reserve4 + '\'' +
+                ", reserve5='" + reserve5 + '\'' +
+                '}';
+    }
 }
