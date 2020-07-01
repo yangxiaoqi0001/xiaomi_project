@@ -3,11 +3,12 @@ package com.xiaoqi.pojo;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @TableName("biz_goods")
-public class Goods {
+public class Goods implements Serializable {
     /**
      * 主键ID
      */
@@ -308,5 +309,36 @@ public class Goods {
 
     public void setGoodsPic5(String goodsPic5) {
         this.goodsPic5 = goodsPic5 == null ? null : goodsPic5.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "id=" + id +
+                ", createTime=" + createTime +
+                ", createUser='" + createUser + '\'' +
+                ", updateTime=" + updateTime +
+                ", updateUser='" + updateUser + '\'' +
+                ", isDelete=" + isDelete +
+                ", name='" + name + '\'' +
+                ", goodsCode='" + goodsCode + '\'' +
+                ", firstCode='" + firstCode + '\'' +
+                ", secondCode='" + secondCode + '\'' +
+                ", introduction='" + introduction + '\'' +
+                ", price=" + price +
+                ", goodsEdition1='" + goodsEdition1 + '\'' +
+                ", goodsEdition2='" + goodsEdition2 + '\'' +
+                ", goodsEdition3='" + goodsEdition3 + '\'' +
+                ", goodsEdition4='" + goodsEdition4 + '\'' +
+                ", goodsColor1='" + goodsColor1 + '\'' +
+                ", goodsColor2='" + goodsColor2 + '\'' +
+                ", goodsColor3='" + goodsColor3 + '\'' +
+                ", goodsColor4='" + goodsColor4 + '\'' +
+                ", goodsPic1='" + goodsPic1 + '\'' +
+                ", goodsPic2='" + goodsPic2 + '\'' +
+                ", goodsPic3='" + goodsPic3 + '\'' +
+                ", goodsPic4='" + goodsPic4 + '\'' +
+                ", goodsPic5='" + goodsPic5 + '\'' +
+                '}';
     }
 }

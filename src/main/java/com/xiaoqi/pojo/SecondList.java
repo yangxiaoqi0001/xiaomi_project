@@ -9,23 +9,41 @@ import java.util.Date;
 public class SecondList implements Serializable {
     @TableId
     private Long id;
-
+    /**
+     * 创建时间
+     */
     private Date createTime;
-
+    /**
+     * 创建人
+     */
     private String createUser;
-
+    /**
+     * 修改时间
+     */
     private Date updateTime;
-
+    /**
+     * 修改人
+     */
     private String updateUser;
-
+    /**
+     * 是否删除
+     */
     private Integer isDelete;
-
+    /**
+     * 第二列表名称
+     */
     private String name;
-
+    /**
+     * 第二列表编号
+     */
     private String secondCode;
-
+    /**
+     * 第一列表编号
+     */
     private String firstCode;
-
+    /**
+     * 第二列表图片
+     */
     private String pic;
 
     public Long getId() {
@@ -66,5 +84,61 @@ public class SecondList implements Serializable {
 
     public void setPic(String pic) {
         this.pic = pic == null ? null : pic.trim();
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getCreateUser() {
+        return createUser;
+    }
+
+    public void setCreateUser(String createUser) {
+        this.createUser = createUser;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public String getUpdateUser() {
+        return updateUser;
+    }
+
+    public void setUpdateUser(String updateUser) {
+        this.updateUser = updateUser;
+    }
+
+    public Integer getIsDelete() {
+        return isDelete;
+    }
+
+    public void setIsDelete(Integer isDelete) {
+        this.isDelete = isDelete;
+    }
+
+    @Override
+    public String toString() {
+        return "SecondList{" +
+                "id=" + id +
+                ", createTime=" + createTime +
+                ", createUser='" + createUser + '\'' +
+                ", updateTime=" + updateTime +
+                ", updateUser='" + updateUser + '\'' +
+                ", isDelete=" + isDelete +
+                ", name='" + name + '\'' +
+                ", secondCode='" + secondCode + '\'' +
+                ", firstCode='" + firstCode + '\'' +
+                ", pic='" + pic + '\'' +
+                '}';
     }
 }

@@ -1,65 +1,121 @@
 package com.xiaoqi.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class GoodsParameter {
+/**
+ * 参数表
+ */
+@TableName("biz_goods_parameter")
+public class GoodsParameter implements Serializable {
     @TableId
     private Long id;
     /**
-     *
-      */
+     *创建时间
+     */
     private Date createTime;
-
+    /**
+     * 创建人
+     */
     private String createUser;
-
+    /**
+     * 修改时间
+     */
     private Date updateTime;
-
+    /**
+     * 修改人
+     */
     private String updateUser;
-
+    /**
+     * 是否删除
+     */
     private Integer isDelete;
-
+    /**
+     * 商品编号
+     */
     private String goodsCode;
-
+    /**
+     * 产数图片1
+     */
     private String parameterPic1;
-
+    /**
+     * 产数图片2
+     */
     private String parameterPic2;
-
+    /**
+     * 产数图片3
+     */
     private String parameterPic3;
-
+    /**
+     * 产数图片4
+     */
     private String parameterPic4;
-
+    /**
+     * 产数图片5
+     */
     private String parameterPic5;
-
+    /**
+     * 产数图片6
+     */
     private String parameterPic6;
-
+    /**
+     * 产数图片7
+     */
     private String parameterPic7;
-
+    /**
+     * 产数图片8
+     */
     private String parameterPic8;
-
+    /**
+     * 产数图片9
+     */
     private String parameterPic9;
-
+    /**
+     * 产数图片10
+     */
     private String parameterPic10;
-
+    /**
+     * 产数图片11
+     */
     private String parameterPic11;
-
+    /**
+     * 产数图片12
+     */
     private String parameterPic12;
-
+    /**
+     * 产数图片13
+     */
     private String parameterPic13;
-
+    /**
+     * 产数图片14
+     */
     private String parameterPic14;
-
+    /**
+     * 产数图片15
+     */
     private String parameterPic15;
-
+    /**
+     * 产数图片16
+     */
     private String parameterPic16;
-
+    /**
+     * 产数图片17
+     */
     private String parameterPic17;
-
+    /**
+     * 产数图片18
+     */
     private String parameterPic18;
-
+    /**
+     * 产数图片19
+     */
     private String parameterPic19;
-
+    /**
+     * 产数图片20
+     */
     private String parameterPic20;
 
     public Long getId() {
@@ -276,5 +332,38 @@ public class GoodsParameter {
 
     public void setParameterPic20(String parameterPic20) {
         this.parameterPic20 = parameterPic20 == null ? null : parameterPic20.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "GoodsParameter{" +
+                "id=" + id +
+                ", createTime=" + createTime +
+                ", createUser='" + createUser + '\'' +
+                ", updateTime=" + updateTime +
+                ", updateUser='" + updateUser + '\'' +
+                ", isDelete=" + isDelete +
+                ", goodsCode='" + goodsCode + '\'' +
+                ", parameterPic1='" + parameterPic1 + '\'' +
+                ", parameterPic2='" + parameterPic2 + '\'' +
+                ", parameterPic3='" + parameterPic3 + '\'' +
+                ", parameterPic4='" + parameterPic4 + '\'' +
+                ", parameterPic5='" + parameterPic5 + '\'' +
+                ", parameterPic6='" + parameterPic6 + '\'' +
+                ", parameterPic7='" + parameterPic7 + '\'' +
+                ", parameterPic8='" + parameterPic8 + '\'' +
+                ", parameterPic9='" + parameterPic9 + '\'' +
+                ", parameterPic10='" + parameterPic10 + '\'' +
+                ", parameterPic11='" + parameterPic11 + '\'' +
+                ", parameterPic12='" + parameterPic12 + '\'' +
+                ", parameterPic13='" + parameterPic13 + '\'' +
+                ", parameterPic14='" + parameterPic14 + '\'' +
+                ", parameterPic15='" + parameterPic15 + '\'' +
+                ", parameterPic16='" + parameterPic16 + '\'' +
+                ", parameterPic17='" + parameterPic17 + '\'' +
+                ", parameterPic18='" + parameterPic18 + '\'' +
+                ", parameterPic19='" + parameterPic19 + '\'' +
+                ", parameterPic20='" + parameterPic20 + '\'' +
+                '}';
     }
 }

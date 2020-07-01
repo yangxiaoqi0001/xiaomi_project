@@ -3,13 +3,14 @@ package com.xiaoqi.pojo;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * 概述表
  */
 @TableName("biz_goods_summary")
-public class GoodsSummary {
+public class GoodsSummary implements Serializable {
     /**
      * 主键Id
      */
@@ -370,5 +371,41 @@ public class GoodsSummary {
 
     public void setSummaryVideo3(String summaryVideo3) {
         this.summaryVideo3 = summaryVideo3 == null ? null : summaryVideo3.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "GoodsSummary{" +
+                "id=" + id +
+                ", createTime=" + createTime +
+                ", createUser='" + createUser + '\'' +
+                ", updateTime=" + updateTime +
+                ", updateUser='" + updateUser + '\'' +
+                ", isDelete=" + isDelete +
+                ", goodsCode='" + goodsCode + '\'' +
+                ", summaryPic1='" + summaryPic1 + '\'' +
+                ", summaryPic2='" + summaryPic2 + '\'' +
+                ", summaryPic3='" + summaryPic3 + '\'' +
+                ", summaryPic4='" + summaryPic4 + '\'' +
+                ", summaryPic5='" + summaryPic5 + '\'' +
+                ", summaryPic6='" + summaryPic6 + '\'' +
+                ", summaryPic7='" + summaryPic7 + '\'' +
+                ", summaryPic8='" + summaryPic8 + '\'' +
+                ", summaryPic9='" + summaryPic9 + '\'' +
+                ", summaryPic10='" + summaryPic10 + '\'' +
+                ", summaryPic11='" + summaryPic11 + '\'' +
+                ", summaryPic12='" + summaryPic12 + '\'' +
+                ", summaryPic13='" + summaryPic13 + '\'' +
+                ", summaryPic14='" + summaryPic14 + '\'' +
+                ", summaryPic15='" + summaryPic15 + '\'' +
+                ", summaryPic16='" + summaryPic16 + '\'' +
+                ", summaryPic17='" + summaryPic17 + '\'' +
+                ", summaryPic18='" + summaryPic18 + '\'' +
+                ", summaryPic19='" + summaryPic19 + '\'' +
+                ", summaryPic20='" + summaryPic20 + '\'' +
+                ", summaryVideo1='" + summaryVideo1 + '\'' +
+                ", summaryVideo2='" + summaryVideo2 + '\'' +
+                ", summaryVideo3='" + summaryVideo3 + '\'' +
+                '}';
     }
 }
