@@ -32,7 +32,7 @@ public class FirstList implements Serializable {
     /**
      * 第一列表
      */
-    private String name;
+    private String firstName;
     /**
      * 第一列表编码
      */
@@ -47,14 +47,6 @@ public class FirstList implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
     }
 
     public String getFirstCode() {
@@ -105,6 +97,14 @@ public class FirstList implements Serializable {
         this.isDelete = isDelete;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     @Override
     public String toString() {
         return "FirstList{" +
@@ -114,7 +114,7 @@ public class FirstList implements Serializable {
                 ", updateTime=" + updateTime +
                 ", updateUser='" + updateUser + '\'' +
                 ", isDelete=" + isDelete +
-                ", name='" + name + '\'' +
+                ", firstName='" + firstName + '\'' +
                 ", firstCode='" + firstCode + '\'' +
                 '}';
     }

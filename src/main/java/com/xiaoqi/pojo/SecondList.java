@@ -32,7 +32,7 @@ public class SecondList implements Serializable {
     /**
      * 第二列表名称
      */
-    private String name;
+    private String secondName;
     /**
      * 第二列表编号
      */
@@ -54,12 +54,12 @@ public class SecondList implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getSecondName() {
+        return secondName;
     }
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 
     public String getSecondCode() {
@@ -135,7 +135,7 @@ public class SecondList implements Serializable {
                 ", updateTime=" + updateTime +
                 ", updateUser='" + updateUser + '\'' +
                 ", isDelete=" + isDelete +
-                ", name='" + name + '\'' +
+                ", secondName='" + secondName + '\'' +
                 ", secondCode='" + secondCode + '\'' +
                 ", firstCode='" + firstCode + '\'' +
                 ", pic='" + pic + '\'' +
