@@ -4,12 +4,17 @@ import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
 import com.aliyun.oss.model.PutObjectRequest;
 import com.aliyun.oss.model.PutObjectResult;
+import com.xiaoqi.util.OSSUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.Resource;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * @author : yangfan
@@ -18,30 +23,53 @@ import java.io.File;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class FileTest {
+@Resource
+private OSSUtil ossUtil;
     @Test
     public void upload(){
-        // Endpoint以杭州为例，其它Region请按实际情况填写。
-        String endpoint = "http://oss-cn-hangzhou.aliyuncs.com";
-// 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
-        String accessKeyId = "<yourAccessKeyId>";
-        String accessKeySecret = "<yourAccessKeySecret>";
+        MultipartFile file=new MultipartFile() {
+            @Override
+            public String getName() {
+                return "TIM截图20200701184446.png";
+            }
 
-// 创建OSSClient实例。
-        OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
+            @Override
+            public String getOriginalFilename() {
+                return null;
+            }
 
-// 创建PutObjectRequest对象。
-        PutObjectRequest putObjectRequest = new PutObjectRequest("<yourBucketName>", "<yourObjectName>", new File("<yourLocalFile>"));
+            @Override
+            public String getContentType() {
+                return null;
+            }
 
-// 如果需要上传时设置存储类型与访问权限，请参考以下示例代码。
-// ObjectMetadata metadata = new ObjectMetadata();
-// metadata.setHeader(OSSHeaders.OSS_STORAGE_CLASS, StorageClass.Standard.toString());
-// metadata.setObjectAcl(CannedAccessControlList.Private);
-// putObjectRequest.setMetadata(metadata);
+            @Override
+            public boolean isEmpty() {
+                return false;
+            }
 
-// 上传文件。
-        PutObjectResult putObjectResult = ossClient.putObject(putObjectRequest);
+            @Override
+            public long getSize() {
+                return 0;
+            }
 
-// 关闭OSSClient。
-        ossClient.shutdown();
+            @Override
+            public byte[] getBytes() throws IOException {
+                return new byte[0];
+            }
+
+            @Override
+            public InputStream getInputStream() throws IOException {
+                return null;
+            }
+
+            @Override
+            public void transferTo(File dest) throws IOException, IllegalStateException {
+
+            }
+        };
+        String upload = OSSUtil.upload(file);
+        System.out.println(upload);
+
     }
 }

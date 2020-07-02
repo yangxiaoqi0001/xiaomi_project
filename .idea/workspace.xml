@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4134c24d-f9e5-45f6-8fb2-0f14dbc7c29c" name="Default" comment="添加">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoqi/util/OSSUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoqi/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoqi/service/impl/GoodsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoqi/contorller/FileContorller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoqi/contorller/FileContorller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoqi/util/OSSUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoqi/util/OSSUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/xiaoqi/FileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/xiaoqi/FileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoqi/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaoqi/pojo/User.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OSSUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OSSUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/util/OSSUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+            <state relative-caret-position="116">
+              <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,20 +38,10 @@
       <file leaf-file-name="FileTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/com/xiaoqi/FileTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
+            <state relative-caret-position="364">
               <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#817#818#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
-                <element signature="e#1190#1191#0" expanded="true" />
-                <element signature="e#1230#1231#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,8 +50,8 @@
       <file leaf-file-name="FileContorller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/contorller/FileContorller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="416">
+              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,11 +59,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="GoodsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/service/GoodsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/service/impl/GoodsServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="494">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -144,9 +158,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xiaoqi/contorller/SecondListController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/com/xiaoqi/FileTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiaoqi/contorller/FileContorller.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaoqi/util/OSSUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiaoqi/contorller/FileContorller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiaoqi/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiaoqi/service/impl/GoodsServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -193,8 +209,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="368" />
-    <option name="y" value="9" />
+    <option name="x" value="449" />
+    <option name="y" value="3" />
     <option name="width" value="1920" />
     <option name="height" value="1040" />
   </component>
@@ -204,7 +220,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,8 +310,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,15 +326,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.xiaoqi.service.impl" />
-      <recent name="com.xiaoqi.service" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\code\boot\xiaomi_project\src\main\java\com\xiaoqi\constant" />
       <recent name="E:\code\boot\xiaomi_project\src\main\java\com\xiaoqi\pojo\vo" />
       <recent name="E:\code\boot\xiaomi_project\src\main\java\com\xiaoqi\pojo" />
       <recent name="E:\code\boot\XiaoMiProject\src\main\java\com\xiaoqi\pojo" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.xiaoqi.service.impl" />
+      <recent name="com.xiaoqi.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -437,7 +453,8 @@
       <workItem from="1593442608234" duration="115000" />
       <workItem from="1593442725461" duration="1897000" />
       <workItem from="1593479847805" duration="2660000" />
-      <workItem from="1593566162592" duration="26299000" />
+      <workItem from="1593566162592" duration="26397000" />
+      <workItem from="1593652126183" duration="2003000" />
     </task>
     <task id="LOCAL-00001" summary="添加商品类，概述类，参数类，维护类">
       <created>1593444098444</created>
@@ -509,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593614273101</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加OSS上传工具类">
+      <created>1593618346144</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593618346144</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -518,7 +542,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35406000" />
+    <option name="totallyTimeSpent" value="37507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -536,26 +560,26 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.0" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4127844" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.058504876" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25692964" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,7 +620,8 @@
     <MESSAGE value="添加商品类代码注释" />
     <MESSAGE value="添加实体类代码注释&#10;添加商品评论pojo类" />
     <MESSAGE value="添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加" />
+    <MESSAGE value="添加OSS上传工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加OSS上传工具类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -604,17 +629,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/pojo/GoodsProtect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/pojo/User.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/pojo/SecondList.java" />
@@ -822,14 +836,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/service.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/service.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/mapper/FirstListMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -840,13 +847,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/service/FirstListServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/service/FirstListServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/mapper/SecondListMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -861,32 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1262">
           <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1289#1290#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1128,28 +1103,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/xiaoqi/FileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
+        <state relative-caret-position="364">
           <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1190#1191#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/contorller/FileContorller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1158,18 +1113,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="494">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/util/OSSUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        <state relative-caret-position="116">
+          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/contorller/FileContorller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaoqi/service/impl/GoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
         </state>
       </provider>
     </entry>
