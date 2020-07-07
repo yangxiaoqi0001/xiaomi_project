@@ -7,6 +7,7 @@ import com.xiaoqi.mapper.FirstListMapper;
 import com.xiaoqi.pojo.FirstList;
 import com.xiaoqi.pojo.vo.PageVo;
 import com.xiaoqi.service.FirstListService;
+import com.xiaoqi.util.CodeUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -22,6 +23,8 @@ public class FirstListServiceImpl implements FirstListService {
     private FirstListMapper firstListMapper;
     @Override
     public Integer insert(FirstList firstList) {
+        //第一列表
+        firstList.setFirstCode(CodeUtil.createCode("DYLB"));
         Integer insert = firstListMapper.insert(firstList);
         return insert;
     }

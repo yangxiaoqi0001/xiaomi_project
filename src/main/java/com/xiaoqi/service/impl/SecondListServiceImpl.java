@@ -10,6 +10,7 @@ import com.xiaoqi.mapper.SecondListMapper;
 import com.xiaoqi.pojo.SecondList;
 import com.xiaoqi.pojo.vo.PageVo;
 import com.xiaoqi.service.SecondListService;
+import com.xiaoqi.util.CodeUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -26,6 +27,7 @@ public class SecondListServiceImpl implements SecondListService {
 
     @Override
     public Integer insert(SecondList secondList) {
+        secondList.setSecondCode(CodeUtil.createCode("第二列表"));
         Integer insert = secondListMapper.insert(secondList);
         return insert;
     }

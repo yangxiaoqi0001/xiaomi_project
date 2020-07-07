@@ -1,6 +1,8 @@
 package com.xiaoqi.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.xiaoqi.pojo.Goods;
+import com.xiaoqi.pojo.vo.PageVo;
 
 import java.util.List;
 
@@ -44,4 +46,11 @@ public interface GoodsService {
      * @return
      */
     List<Goods> getList();
+
+    /**
+     * 分页查询商品
+     * @param pageVo
+     * @return
+     */
+    IPage<Goods> getPage(PageVo pageVo);
 }
