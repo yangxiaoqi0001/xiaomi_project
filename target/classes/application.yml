@@ -4,6 +4,10 @@ server:
 #指定sql映射文件的位置
 mybatis-plus:
   mapper-locations: mapper/*.xml
+  global-config:
+    db-config:
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 #系统环境选择配置
 spring:
 #数据源配置
@@ -13,3 +17,26 @@ spring:
     url: jdbc:mysql://localhost:3306/xiaomi_project?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
+#redis配置
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password:
+  # 连接超时时间
+  timeout: 10000
+  pool:
+    # 连接池最大连接数（使用负值表示没有限制）
+    max-active: 200
+    # 连接池最大阻塞等待时间（使用负值表示没有限制）
+    max-wait: -1
+    # 连接池中的最大空闲连接
+    max-idle: 8
+    # 连接池中的最小空闲连接
+    min-idle: 0
+OSS:
+  AK: LTAI4G9Yrg1QunCfecru6ahe
+  AS: ofCB0fAsZVDXkf3KhuRqTW3Kgfygq1
+  point: oss-cn-beijing.aliyuncs.com
+  bucketName: yangxiaoqi
+File:
+  upload: E:\UploadFiles

@@ -1,5 +1,8 @@
 package com.xiaoqi.pojo;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.util.Date;
@@ -16,6 +19,7 @@ public class GoodsComment {
     /**
      * 创建时间
      */
+    @TableField(fill = FieldFill.INSERT)
     private Date createTime;
     /**
      * 创建人
@@ -24,10 +28,12 @@ public class GoodsComment {
     /**
      * 修改时间
      */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
     /**
      * 修改人
      */
+    @TableLogic
     private String updateUser;
     /**
      * 是否删除

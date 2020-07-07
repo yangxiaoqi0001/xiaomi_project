@@ -1,7 +1,6 @@
 package com.xiaoqi.pojo;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -19,6 +18,7 @@ public class GoodsSummary implements Serializable {
     /**
      * 创 建时间
      */
+    @TableField(fill = FieldFill.INSERT)
     private Date createTime;
     /**
      * 创建人
@@ -27,10 +27,12 @@ public class GoodsSummary implements Serializable {
     /**
      * 修改时间
      */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
     /**
      * 修改人
      */
+    @TableLogic
     private String updateUser;
     /**
      * 是否删除
